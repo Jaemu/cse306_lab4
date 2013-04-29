@@ -1,0 +1,24 @@
+Describe how you implemented the main programming assignment. The README
+file should describe what you did, what approach you took, results of any
+measurements you made, which files are included in your submission and what
+they are for, etc.  Feel free to include any other information you think is
+helpful to us in this README; it can only help your grade.
+
+
+fileutil implementation:
+- Components:
+	- CLI:
+		-- I used wikipedia as a source to understand how command line arguments are passed to main from standard input.  From what I gathered, arguments separated by a space are considered independent arguments that are null terminated.
+		-- My logic was to identify which flags were passed and once verifying that the flag identifiers did not conflict with each other, began to search the arguments for the input file and the output file.  
+		-- 
+	- count:
+		-- Parameters: const char *infile (name of file)
+		-- Description: Counts the number of lines present in the text file infile, prints result to console.
+		-- Returns: 0 (successful), -1 (error)
+	- help:
+		-- This was the first function I was able to implement.  I think this is where I will lose the most amount of points with regards to coding style, as I sort of hardcoded some values to compensate for inability to use the sizeof() function.  I later realized that this was silly and wrote a fairly simple string length function.  We're allowed to do that, right? 
+	- reverse:
+		-- This function was probably the most challenging, in that to properly reverse the file I needed to find some information about the size of the file first.  
+	- to_dos:
+	- to_unix:
+	- 

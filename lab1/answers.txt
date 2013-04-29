@@ -1,0 +1,13 @@
+Place the answers to required questions in this text file.
+Lab 1 Exercises
+
+4.1: The cmpl $(NR_syscalls), %eax instruction compares the value stored in the %eax register (the index to the syscall table) to NR_syscalls, which is translated to 344.  The next instruction is jae syscall_badsys, which will get executed if the value stored in %eax is equal or higher than 344.  This prevents any syscall referenced by any index >= 344 from being called from user space.
+
+4.2: The registers in ascending order, starting from the one closest to %esp:
+- %ebx, argument 1
+- %ecx, argument 2
+- %edx, argument 3
+- %esi, argument 4
+- %edi, argument 5
+- %ebp, argument 6
+- %eax, system call number
