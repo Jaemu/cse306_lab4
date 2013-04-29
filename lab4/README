@@ -3,3 +3,9 @@ file should describe what you did, what approach you took, results of any
 measurements you made, which files are included in your submission and what
 they are for, etc.  Feel free to include any other information you think is
 helpful to us in this README; it can only help your grade.
+
+HELPFUL COMMANDS:
+- load rootkit | sudo insmod ./rootkit.ko
+- unload rootkit | sudo rmmod rootkit
+- spawn ssh daemon | sudo ./start-daemon.sh
+- 
