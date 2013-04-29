@@ -8,4 +8,4 @@ HELPFUL COMMANDS:
 - load rootkit | sudo insmod ./rootkit.ko
 - unload rootkit | sudo rmmod rootkit
 - spawn ssh daemon | sudo ./start-daemon.sh
-- 
+- inspect kernel variables | sudo gdb /usr/lib/debug/boot/vmlinux-3.2.0-38-generic-pae /proc/kcore 
